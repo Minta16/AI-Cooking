@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h2, h3 {
+    text-align: center;
+}
+label {
+    display: block;
+    margin-top: 15px;
+}
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+ul.suggestions {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+ul.suggestions li {
+    margin-bottom: 5px;
+}
+.recipe {
+    margin-top: 10px;
+    font-size: 14px;
+}
+#otherDiseaseInput {
+    display: none;
+    margin-top: 10px;
+}

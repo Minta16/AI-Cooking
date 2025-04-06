@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiện Nhân official</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Tình trạng sức khỏe</h2>
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" placeholder="Nhập họ tên">
+
+        <label for="height">Chiều cao (cm):</label>
+        <input type="number" id="height" placeholder="Nhập chiều cao">
+
+        <label for="weight">Cân nặng (kg):</label>
+        <input type="number" id="weight" placeholder="Nhập cân nặng">
+
+        <label>Bệnh lý liên quan (nếu có):</label>
+        <div style="margin-top:5px;">
+            <label><input type="checkbox" name="diseases" value="Tiểu đường"> Tiểu đường</label><br>
+            <label><input type="checkbox" name="diseases" value="Cao huyết áp"> Cao huyết áp</label><br>
+            <label><input type="checkbox" name="diseases" value="Tim mạch"> Tim mạch</label><br>
+            <label><input type="checkbox" name="diseases" value="Hô hấp"> Hô hấp</label><br>
+            <label><input type="checkbox" name="diseases" value="Khác" onclick="showOtherDiseaseInput()"> Khác</label>
+        </div>
+
+        <div id="otherDiseaseInput">
+            <label for="otherDisease">Nhập bệnh lý khác:</label>
+            <input type="text" id="otherDisease" placeholder="Nhập tên bệnh">
+        </div>
+
+        <label for="ingredients">Nguyên liệu sẵn có (cách nhau bởi dấu phẩy):</label>
+        <input type="text" id="ingredients" placeholder="Ví dụ: gà, rau muống, trứng">
+
+        <button onclick="calculateBMI()">Kiểm tra</button>
+
+        <div id="result"></div>
+
+        <hr>
+        <h3>Gợi ý thực phẩm nên ăn</h3>
+        <div id="suggestions"></div>
+
+        <hr>
+        <h3>Bệnh của bạn:</h3>
+        <div id="disease-list"></div>
+        <hr>
+        <h3>Quét ảnh với Google Vision</h3>
+        <input type="file" accept="image/*" id="imageInput" capture="environment">
+        <button onclick="scanImage()">Quét ảnh</button>
+        <pre id="vision-result" style="white-space: pre-wrap; background: #f4f4f4; padding: 10px;"></pre>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
